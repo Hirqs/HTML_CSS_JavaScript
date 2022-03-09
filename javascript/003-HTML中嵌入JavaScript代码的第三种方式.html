@@ -20,15 +20,18 @@
 		<!--
 		<script type="text/javascript" src="js/1.js" />
 		-->
+		<!--下面的这种方式才可以，结束的script标签必须有。-->
 		<!--
 		<script type="text/javascript" src="js/1.js"></script>
 		-->
 
 		<script type="text/javascript" src="js/1.js">
-			// 这里写的代码不会执行。
+			// 如果是引入的js文件 这里写的代码不会执行。但是单独写一个脚本块 里面的代码可以执行
 			// window.alert("Test");
 		</script>
 
+
+		//引入js文件后单独写的脚本块 里面的代码可以执行
 		<script type="text/javascript">
 			alert("hello jack!");
 		</script>
