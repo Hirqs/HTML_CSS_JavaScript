@@ -41,7 +41,7 @@
 		   
 		   // 别人去调用以上你写的sum函数.
 		   var retValue = sum(false, "abc");
-		   alert(retValue); // undefined
+		   alert(retValue); // 结果不是false,abc必须都为数字！ 而是undefined，因为这个函数不执行if语句没有返回值
 		   
 		   var retValue2 = sum(1, 2);
 		   alert(retValue2); // 3
