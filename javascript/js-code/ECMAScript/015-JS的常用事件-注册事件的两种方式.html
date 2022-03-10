@@ -58,6 +58,7 @@
 			*/
 		   // 第一步:先获取这个按钮对象(document是全部小写，内置对象，可以直接用，document就代表整个HTML页面)
 		   var btnObj = document.getElementById("mybtn");
+
 		   // 第二步:给按钮对象的onclick属性赋值
 		   btnObj.onclick = doSome; // 注意:千万别加小括号. btnObj.onclick = doSome();这是错误的写法.
 									// 这行代码的含义是,将回调函数doSome注册到click事件上.
@@ -67,7 +68,7 @@
 			   alert("test.........."); // 这个函数在页面打开的时候只是注册上,不会被调用,在click事件发生之后才会调用.
 		   }
 		   
-		   document.getElementById("mybtn2").onclick = function(){
+		   document.getElementById("mybtn2").onclick = function(){//懂上面的之后就可以用这个最简单的方式写
 			   alert("test22222222.........");
 		   }
 		</script>
