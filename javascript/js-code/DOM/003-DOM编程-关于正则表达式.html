@@ -89,7 +89,7 @@
 					   document.getElementById("emailError").innerText = "邮箱地址不合法";
 				   }
 			   }
-			   // 给文本框绑定focus
+			   // 给文本框绑定focus 是为了验证不合法的时候报红提示 光标重新定位到文本框时让报红消失
 			   document.getElementById("email").onfocus = function(){
 				   document.getElementById("emailError").innerText = "";
 			   }
