@@ -25,7 +25,7 @@
 				alert(event.keyCode);
 			   }
 			   */
-			  usernameElt.onkeydown = function(event){
+			  usernameElt.onkeydown = function(event){//这里的event写上的话可以接收事件，此例中是接收键盘事件，需要用上的时候就把这个参数写上 不用的时候不写
 				  if(event.keyCode === 13){
 					  alert("正在进行验证....");
 				  }
